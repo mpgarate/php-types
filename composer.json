@@ -1,0 +1,16 @@
+{
+    "name": "mpgarate/php-types",
+    "require": {},
+    "require-dev": {
+        "phpunit/phpunit": "^6.2"
+    },
+    "authors": [
+        {
+            "name": "michael",
+            "email": "mpgarate@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-0": { "": "lib/" }
+    }
+}
