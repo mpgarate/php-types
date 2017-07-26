@@ -19,6 +19,10 @@ class ScalarTest extends \PHPUnit\Framework\TestCase {
         return $b;
     }
 
+    private function acceptsNullableBool(?bool $b) {
+        return $b;
+    }
+
     private function acceptsFloat(float $n) {
         return $n;
     }
@@ -68,6 +72,10 @@ class ScalarTest extends \PHPUnit\Framework\TestCase {
         $this->expectException(TypeError::class);
 
         $this->acceptsBool(null);
+    }
+
+    public function testAcceptsNullableBool_null() {
+        $this->assertTrue(null === $this->acceptsNullableBool(null));
     }
 
     public function testAcceptsFloat() {
