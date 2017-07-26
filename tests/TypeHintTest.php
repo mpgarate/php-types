@@ -3,7 +3,7 @@
 class A {}
 class B extends A {}
 
-class ScalarTest extends \PHPUnit\Framework\TestCase {
+class TypeHintTest extends \PHPUnit\Framework\TestCase {
 
     // toy functions with hints
 
